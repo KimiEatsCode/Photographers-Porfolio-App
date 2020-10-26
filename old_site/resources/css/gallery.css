@@ -1,0 +1,210 @@
+span.vanish {
+  display: none !important;
+}
+
+li {
+  background-color: #ABC884 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  width: 148px !important;
+  list-style: none !important;
+  line-height: 1.6em !important;
+  padding: 0.00 !important;
+  float: left !important;
+  border-color: #ABC884 !important;
+  margin: 0 5px !important;
+  font-size: 14px !important;
+  color: inherit;
+}
+
+label {
+  background-color: transparent !important;
+  display: block !important;
+  color: #FFFFFF !important;
+  padding: 0.00 !important;
+  margin: 0 auto !important;
+  text-transform: uppercase !important;
+}
+
+#submitButton:hover {
+  background-color: #D9E4C8 !important;
+  color: inherit;
+}
+
+body {
+  line-height: 1.5em !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  padding: 0.00 !important;
+  font-family: Helvetica, sans-serif !important;
+  margin: 0.00 !important;
+  background-color: #FFFFFF !important;
+}
+
+#contact {
+  clear: both !important;
+  text-align: center !important;
+  padding: 0.00 !important;
+  margin: 0 auto !important;
+  width: 320px !important;
+}
+
+.highslide-caption a {
+  background-color: transparent !important;
+  text-align: center !important;
+  display: block !important;
+  color: #191919 !important;
+  height: 18px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.idplate {
+  display: inherit !important;
+}
+
+.highslide-caption a.previous {
+  float: left !important;
+  background-image: url(../images/previous.png) !important;
+  width: 25% !important;
+}
+
+.thumbSquare {
+  border-style: solid !important;
+  border-width: 1px !important;
+  width: 68px !important;
+  background-repeat: no-repeat !important;
+  margin: 5px !important;
+  padding: 0.00 !important;
+  height: 68px !important;
+  border-color: #ABC884 !important;
+  background-position: center !important;
+  float: left !important;
+}
+
+#gallery {
+  clear: both !important;
+  border: 0px solid #000000 !important;
+  padding: 0.00 !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+img {
+  border: 0.00 !important;
+}
+
+.clear {
+  clear: both !important;
+}
+
+p {
+  margin: 1em 0 !important;
+  padding: 0.00 !important;
+}
+
+input#submitButton {
+  background-color: #ABC884 !important;
+  border-color: #ABC884 !important;
+  color: #FFFFFF !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  width: 148px !important;
+}
+
+a {
+  outline: none !important;
+  color: #FFFFFF !important;
+  height: 100% !important;
+  text-decoration: none !important;
+  display: block !important;
+  background-color: inherit;
+}
+
+.highslide-caption a.next {
+  float: right !important;
+  background-image: url(../images/next.png) !important;
+  width: 25% !important;
+}
+
+#text {
+  clear: both !important;
+  text-align: justify !important;
+  padding: 10px !important;
+  margin: 5px auto !important;
+}
+
+#previewImage {
+  maxSize: 500.00 !important;
+}
+
+#menu {
+  padding: 0.00 !important;
+  margin: 0 auto !important;
+  width: 320px !important;
+}
+
+.highslide-caption a.close {
+  background-image: url(../images/close.png) !important;
+  margin: 0 auto !important;
+  width: 40% !important;
+}
+
+.highslide-caption a span {
+  display: none !important;
+}
+
+#wrapper {
+  overflow: auto !important;
+  background: transparent !important;
+  margin: 0.00 !important;
+  padding: 0.00 !important;
+}
+
+.footer {
+  font-weight: bold !important;
+  border-width: 1px 0 0 0 !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  padding: 0 10px 0 !important;
+  border-color: #ABC884 !important;
+  margin: 10px 10px 5px !important;
+  border-style: solid !important;
+}
+
+#contact input, #contact textarea {
+  background-color: #FFFFFF !important;
+  color: #191919 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  width: 292px !important;
+  padding: 4px 2px !important;
+  border-color: #ABC884 !important;
+  margin: 0.00 !important;
+  line-height: 1.4em !important;
+}
+
+#menu a:hover {
+  background-color: #D9E4C8 !important;
+  padding: 0.00 !important;
+  margin: 0.00 !important;
+  color: inherit;
+}
+
+ul {
+  list-style: none !important;
+  margin: 0 auto !important;
+  padding: 0.00 !important;
+}
+
+.input {
+  background-color: #D9E4C8 !important;
+  border-width: 1px !important;
+  border-color: #ABC884 !important;
+  border-style: solid !important;
+  margin: 5px !important;
+  padding: 5px !important;
+  color: inherit;
+}

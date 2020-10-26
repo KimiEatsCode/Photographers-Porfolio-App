@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="logo">
+<a href="index.html">
+<img width="352" height="49" border="0" alt="logo" src="images/logo.jpg">
+</a>
+</div>
+<div id="nav">
+</div>
+</div>
+<div class="content">
+<div id="home"> </div>
+<div class="center">
+</div>
+</div>
+<div id="footer">
+</div>
+</div>
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript" src="http://www.google-analytics.com/ga.js">
+</script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
+object {
+    outline-style: none;
+}
+body {
+    background-color: #939598;
+    color: #505254;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.contenttext {
+    color: #000000;
+}
+h1 {
+    color: #B1D9A3;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+a:link, a:visited {
+    color: #545454;
+    text-decoration: underline;
+}
+a:hover {
+    color: #000000;
+}
+#wrapper {
+    height: auto;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1024px;
+}
+#header {
+    background-image: url("http://winokurphotography.com/images/header_background.jpg");
+    background-repeat: no-repeat;
+    height: 71px;
+    margin-top: 60px;
+    width: 795px;
+}
+#header #logo {
+    float: left;
+    height: 49px;
+    width: 352px;
+}
+#nav {
+    float: right;
+    font-family: 'Gotham',Arial,Helvetica,sans-serif;
+    margin-right: 15px;
+    margin-top: 38px;
+    text-align: right;
+    text-transform: uppercase;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav ul li {
+    display: inline;
+}
+a.linkNav:link, a.linkNav:visited {
+    color: #505254;
+    text-decoration: none;
+}
+a.linkNav:hover {
+    color: #B1D9A3;
+    text-decoration: none;
+}
+.navon {
+    color: #FFFFFF;
+}
+#footer {
+    background-image: url("/images/footer_line.jpg");
+    background-repeat: no-repeat;
+    clear: both;
+    height: auto;
+    width: 795px;
+}
+#footer #footerinfo {
+    color: #636467;
+    padding: 5px 15px 0 0;
+    text-align: right;
+}
+.footernav {
+    padding-bottom: 0;
+}
+#footer ul li {
+    display: inline;
+    padding: 0 0 0 10px;
+}
+.footeron {
+    color: #FFFFFF;
+}
+a.linkFooter:link, a.linkFooter:visited {
+    color: #B1D9A3;
+    text-decoration: none;
+}
+a.linkFooter:hover {
+    color: #505254;
+    text-decoration: none;
+}
+.footertext {
+    font-size: 10px;
+}
+#wrapper #home {
+    font-family: Arial,Helvetica,sans-serif;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 795px;
+}
+#wrapper #about {
+    height: 510px;
+    padding: 10px 15px;
+    text-align: left;
+    width: 765px;
+}
+#wrapper #portfolio {
+    float: left;
+    height: auto;
+    padding: 10px 15px 10px 20px;
+    width: 957px;
+}
+#wrapper #portfolio #collection {
+    float: left;
+}
+#wrapper #portfolio #sidenav {
+    float: left;
+    font-family: 'Gotham',Arial,Helvetica,sans-serif;
+    margin: 45px 0 0 40px;
+}
+#sidenav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sidenav ul li {
+    line-height: 22px;
+}
+a.linkSidenav:link, a.linkSidenav:visited {
+    color: #505254;
+    text-decoration: none;
+}
+a.linkSidenav:hover {
+    color: #B1D9A3;
+    text-decoration: none;
+}
+.sidenavon {
+    color: #FFFFFF;
+}
+.bodytext, strong {
+    color: #000000;
+}
+.bodytextbold {
+    font-weight: bold;
+}

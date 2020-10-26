@@ -1,0 +1,23 @@
+/*----------------------------- 
+RESET STYLES 
+-----------------------------*/  
+  
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {  
+	margin: 0;  
+	padding: 0;  
+	-webkit-text-size-adjust: none;  
+	}
+	  
+body {  
+	font-size: 10px;  
+	}  
+
+ul, li, ol, dl, dd, dt {  
+	list-style:none;  
+	padding:0;  
+	margin:0;  
+	}  
+
+a {  
+	text-decoration:none;  
+	}  

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+	<title>Michael Winokur Photography</title>
+
+	<!--
+		JAIPHO BETA version 0.54.00 - iPhone optimized javascript gallery
+		Check on http://www.jaipho.com/ for latest news and source updates
+	 -->
+
+
+		<link href="jaipho/Themes/Default/jaipho.css" rel="stylesheet" type="text/css"/>
+
+	<!--
+		IPAD FIX - TO BE ENABLED IF IPAD USER IS DETECTED
+		<link href="jaipho/Themes/Default/jaipho-ipad.css" rel="stylesheet" type="text/css"/>
+	-->
+
+			<!--
+
+			The whole source in one file.
+
+			-->
+
+				<script src="jaipho/jaipho-0.54.00-preload-src.js" type="text/javascript"></script>
+			<!--
+
+			Developer version. All classes are in separate files. Much easier to debug.
+
+
+				<script src="jaipho/Jph/Util/Touches.js" type="text/javascript"></script>
+				<script src="jaipho/Jph/Util/PreloaderItem.js" type="text/javascript"></script>
+				<script src="jaipho/Jph/Util/Preloader.js" type="text/javascript"></script>
+				<script src="jaipho/Jph/Util/OrientationManager.js" type="text/javascript"></script>
+				<script src="jaipho/Jph/Util/Event.js" type="text/javascript"></script>
+				<script src="jaipho/Jph/Util/Console.js" type="text/javascript"></script>
+				<script src="jaipho/Jph/common.js" type="text/javascript"></script>
+			-->
+
+	<script type="text/javascript">
+
+		// CONFIGURATION BLOCK
+		// v 0.53
+
+		// basic parameters
+		var TOOLBARS_HIDE_TIMEOUT				=	8000;
+		var SLIDESHOW_ROLL_TIMEOUT				=	4000;
+		var SLIDE_SCROLL_DURATION				=	'1.0s';
+		var SLIDE_PRELOAD_TIMEOUT				=	1100;
+		var SLIDE_PRELOAD_SEQUENCE				=	'1,-1,2';
+		var SPLASH_SCREEN_DURATION				=	1000;
+		var DEFAULT_STARTUP_MODE				=	'slider';  // thumbs, slider, slideshow
+
+		// advanced parameters
+		var ENABLE_SAFARI_HISTORY_PATCH			=	true;
+		var MAX_CONCURENT_LOADING_THUMBNAILS	=	4;
+		var MAX_CONCURENT_LOADING_SLIDE			=	1;
+		var MIN_DISTANCE_TO_BE_A_DRAG			=	25;
+		var MAX_DISTANCE_TO_BE_A_TOUCH			=	10;
+		var CHECK_ORIENTATION_INTERVAL			=	1000;
+		var BLOCK_VERTICAL_SCROLL				=	true;
+		var BASE_URL							=	'jaipho/';
+		var SLIDE_MAX_IMAGE_ELEMENS				=	50;
+
+		// debug parameters
+		var DEBUG_MODE							=	false;
+		var DEBUG_LEVELS						=	'';
+
+	 	if (DEBUG_MODE)
+			JphUtil_Console.CreateConsole( DEBUG_LEVELS);
+
+	</script>
+
+</head>
+
+<body onload="init_jaipho()">
+
+	<!--
+		Important!
+		Do not remove elements with html attribute id set to some value. Those elements are required by javascript application.
+		All other can be customized as required by project needs.
+	 -->
+
+	<!-- SPLASH SCREEN -->
+	<table id="splash-screen" class="splash-screen">
+	<tr>
+		<td class="text">
+		loading photo
+		</td>
+	</tr>
+	<tr>
+		<td class="image">&nbsp;
+
+		</td>
+	</tr>
+	</table>
+
+	<script type="text/javascript">
+
+		// SPLASH SCREEN INIT
+		scrollTo(0,1);
+				var or_mngr	=	new JphUtil_OrientationManager( 320, 480);	// iPhone version
+		// var or_mngr	=	new JphUtil_OrientationManager( 768, 1024); // iPad version
+
+		or_mngr.Init();
+
+	</script>
+
+	<!-- JAIPHO PRELOAD IMAGES -->
+	<div id="preloader">
+	</div>
+
+	<!-- THUMBNAILS -->
+	<div class="toolbar" id="thumbs-toolbar-top">
+
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+
+			<td class="center">
+				Collection - People</td>
+			<td class="wing"></td>
+			<td class="wing">
+				<a class="button" href="">
+					Back to Menu
+				</a>
+			</td>
+		</tr>
+		</table>
+
+	</div>
+
+    <div id="thumbs-container">
+		<div id="thumbs-images-container">
+		</div>
+		<div id="thumbs-count-text">
+		</div>
+    </div>
+
+
+	<!-- SLIDER -->
+	<div id="slider-overlay">
+
+		<div class="toolbar" id="slider-toolbar-top">
+
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="center" id="navi-info">
+				</td>
+
+
+
+				<td class="wing">
+					<a class="button" href="index.html">
+						&nbsp;
+					</a>
+				</td>
+
+			</tr>
+			</table>
+		</div>
+
+		<div class="toolbar" id="slider-toolbar-bottom">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td>
+					<a class="navi-button" id="navi-prev" href="javascript: void(0);">
+					</a>
+				</td>
+				<td style="width: 80px;">
+					<a class="navi-button" id="navi-play" href="javascript: void(0);">
+					</a>
+					<a class="navi-button" id="navi-pause" href="javascript: void(0);">
+					</a>
+				</td>
+				<td>
+					<a class="navi-button" id="navi-next" href="javascript: void(0);">
+					</a>
+				</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+
+    <div id="slider-container">
+    </div>
+
+
+	
+
+				<script src="jaipho/jaipho-0.54.00-main-src.js" type="text/javascript"></script>
+
+
+	<script type="text/javascript">
+
+		// APPLICATION INIT BLOCK
+		// v 0.53
+
+		 // load images
+		var dao	=	new Jph_Dao();
+
+		dao.ReadImage( 0,'style/style-01.jpg','image-01-thumb.jpg','','');
+		dao.ReadImage( 1,'style/style-02.jpg','image-02-thumb.jpg','','');
+		dao.ReadImage( 2,'style/style-03.jpg','image-03-thumb.jpg','','');		dao.ReadImage( 3,'style/style-04.jpg','image-04-thumb.jpg','','');
+		dao.ReadImage( 4,'style/style-05.jpg','image-05-thumb.jpg','','');
+		dao.ReadImage( 5,'style/style-06.jpg','image-06-thumb.jpg','','');
+		dao.ReadImage( 6,'style/style-07.jpg','image-07-thumb.jpg','','');
+		dao.ReadImage( 7,'style/style-08.jpg','image-08-thumb.jpg','','');
+		dao.ReadImage( 8,'style/style-09.jpg','image-09-thumb.jpg','','');
+		dao.ReadImage( 9,'style/style-10.jpg','image-10-thumb.jpg','','');
+		dao.ReadImage( 10,'style/style-11.jpg','image-11-thumb.jpg','','');
+		dao.ReadImage( 11,'style/style-12.jpg','image-12-thumb.jpg','','');
+		dao.ReadImage( 12,'style/style-13.jpg','image-13-thumb.jpg','','');
+		dao.ReadImage( 13,'style/style-14.jpg','image-14-thumb.jpg','','');
+		dao.ReadImage( 14,'style/style-15.jpg','image-15-thumb.jpg','','');
+		dao.ReadImage( 15,'style/style-16.jpg','image-16-thumb.jpg','','');
+		dao.ReadImage( 16,'style/style-17.jpg','image-17-thumb.jpg','','');
+		dao.ReadImage( 17,'style/style-18.jpg','image-18-thumb.jpg','','');
+		dao.ReadImage( 18,'style/style-19.jpg','image-19-thumb.jpg','','');
+		dao.ReadImage( 19,'style/style-20.jpg','image-20-thumb.jpg','','');
+		dao.ReadImage( 20,'style/style-21.jpg','image-21-thumb.jpg','','');
+		dao.ReadImage( 21,'style/style-22.jpg','image-22-thumb.jpg','','');
+		dao.ReadImage( 22,'style/style-23.jpg','image-23-thumb.jpg','','');
+		dao.ReadImage( 23,'style/style-24.jpg','image-24-thumb.jpg','','');
+		dao.ReadImage( 24,'style/style-25.jpg','image-25-thumb.jpg','','');
+		dao.ReadImage( 30,'style/style-31.jpg','image-31-thumb.jpg','','');
+		dao.ReadImage( 31,'style/style-32.jpg','image-32-thumb.jpg','','');
+		dao.ReadImage( 32,'style/style-33.jpg','image-33-thumb.jpg','','');
+		// global reference to jaipho application
+		var app;
+		var splash	=	document.getElementById( 'splash-screen');
+		function init_jaipho()
+		{
+			if (SPLASH_SCREEN_DURATION > 0)
+				splash.style.display	=	'table';
+
+			setTimeout('_init_jaipho()', SPLASH_SCREEN_DURATION);
+		}
+
+		function _init_jaipho()
+		{
+			// remove splash screen
+			splash.style.display	=	'none';
+
+			// start jaipho
+			app	=	new Jph_Application( dao, or_mngr, splash);
+			app.Init();
+			app.Run();
+		}
+
+	</script>
+
+
+
+
+</body>
+</html>

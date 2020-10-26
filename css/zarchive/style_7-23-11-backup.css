@@ -1,0 +1,210 @@
+/* General Global CSS */
+
+/***************************
+img, div, a, input { behavior: url(/css/resources/iepngfix.htc) }
+
+@font-face {
+font-family:'Gotham';
+src: url('/images/Gotham-Book.otf') format('opentype');
+}
+****************************/
+
+object {
+ outline-style: none;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#505254;
+    background-color:#939598;
+}
+
+.contenttext {
+	color:#000000;
+}
+
+h1 {
+	color:#b1d9a3;
+	font-size: 18px;
+	font-weight:300;
+	letter-spacing: .05em;
+}
+
+a:link, a:visited {
+	color:#545454;
+	text-decoration: underline;
+}
+
+a:hover {
+	color:#000000;
+}
+
+#wrapper {
+	height: auto;
+	width: 1024px;
+	margin: 0 auto 0 auto;
+	padding: 0 40px 0 40px;
+}
+
+#header {
+	height: 71px;
+	width: 795px;
+	margin-top:60px;
+	background-image:url(/images/header_background.jpg);
+	background-repeat: no-repeat;
+}
+
+#header #logo {
+	height: 49px;
+	width: 352px;
+	float: left;
+}
+
+#nav {
+	font-family:'Gotham', Arial, Helvetica, sans-serif;
+	margin-right:15px;
+	margin-top: 38px;
+	float: right;
+	text-transform: uppercase;
+	text-align: right;
+	
+}
+
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+} 
+
+#nav ul li {
+	display: inline;
+}
+
+a.linkNav:link, a.linkNav:visited {
+	color:#505254;
+	text-decoration: none;
+}
+
+a.linkNav:hover {
+	color:#b1d9a3;
+	text-decoration: none;
+}
+
+.navon {
+	color:#ffffff;
+}
+
+#footer {
+	clear:both;
+	height: auto;
+	width: 795px;
+	background-image:url(/images/footer_line.jpg);
+	background-repeat:no-repeat;
+}
+
+#footer #footerinfo {
+	color:#636467;
+	padding: 5px 15px 0 0;
+	text-align: right;
+}
+
+.footernav {
+	padding-bottom:0px;
+	
+}
+
+#footer ul li {
+	display: inline;
+	padding: 0 0 0 10px;
+}
+
+.footeron {
+	color:#ffffff;
+}
+
+a.linkFooter:link, a.linkFooter:visited {
+	color:#b1d9a3;
+	text-decoration: none;
+}
+
+a.linkFooter:hover {
+	color:#505254;
+	text-decoration: none;
+}
+
+.footertext {
+	font-size: 10px;
+}
+
+
+/* Home */
+
+#wrapper #home {
+	height: auto;
+	width: 795px;
+	padding: 10px 0 10px 0;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* About Contact Reading List*/
+
+#wrapper #about {
+	height: 510px;
+	width: 765px;
+	padding: 10px 15px 10px 15px;
+	text-align:left;
+}
+
+/* Portfolio */
+
+#wrapper #portfolio {
+	height: auto;
+	width: 957px;
+	padding: 10px 15px 10px 20px;
+	float:left;
+}
+
+#wrapper #portfolio #collection {
+	float:left;
+}
+
+#wrapper #portfolio #sidenav {
+	font-family:'Gotham', Arial, Helvetica, sans-serif;
+	float:left;
+	margin: 45px 0 0 40px;
+}
+
+
+#sidenav ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+} 
+
+#sidenav ul li {
+	line-height:22px;
+}
+
+a.linkSidenav:link, a.linkSidenav:visited {
+	color:#505254;
+	text-decoration: none;
+}
+
+a.linkSidenav:hover {
+	color:#b1d9a3;
+	text-decoration: none;
+}
+
+.sidenavon {
+	color:#ffffff;
+}
+
+.bodytext, strong {
+ color: #000;
+}
+
+.bodytextbold {
+ font-weight: bold;
+}
